@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Currency Rates</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #121212; /* graphite black */
+      color: #cce4ff; /* soft light blue */
+      padding: 15px;
+      width: 260px;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #cce4ff;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 6px;
+      margin-top: 5px;
+      border: 1px solid #2979ff;
+      border-radius: 4px;
+      background-color: #1e1e1e;
+      color: #cce4ff;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: #82b1ff;
+      box-shadow: 0 0 5px #82b1ff;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 15px;
+      background-color: #2979ff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #5393ff;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+      color: #82b1ff;
+      text-shadow: 0 0 6px #2979ff;
+    }
+  </style>
+</head>
+<body>
+  <h3>Daily Currency Rates</h3>
+  <label>Amount:
+    <input type="number" id="amount" value="1" step="0.01">
+  </label>
+
+  <label>From:
+    <select id="from">
+      <option value="USD">USD - US Dollar</option>
+      <option value="EUR" selected>EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+      <option value="CHF">CHF - Swiss Franc</option>
+      <option value="CAD">CAD - Canadian Dollar</option>
+      <option value="AUD">AUD - Australian Dollar</option>
+      <option value="CNY">CNY - Chinese Yuan</option>
+    </select>
+  </label>
+
+  <label>To:
+    <select id="to">
+      <option value="USD" selected>USD - US Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+      <option value="CHF">CHF - Swiss Franc</option>
+      <option value="CAD">CAD - Canadian Dollar</option>
+      <option value="AUD">AUD - Australian Dollar</option>
+      <option value="CNY">CNY - Chinese Yuan</option>
+    </select>
+  </label>
+
+  <button id="convert">Convert</button>
+  <p id="result"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
