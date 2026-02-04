@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Daily Currency Rates",
-  "version": "1.0",
-  "description": "Convert currencies in real time using Frankfurter API",
+  "version": "1.1",
+  "description": "Convert currencies using official daily exchange rates from the Frankfurter API.",
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "popup.html",
